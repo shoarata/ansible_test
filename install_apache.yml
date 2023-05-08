@@ -1,0 +1,7 @@
+---
+
+- host: all
+  tasks:
+  - name: install apache2 package
+    apk: 
+      name: apache2
