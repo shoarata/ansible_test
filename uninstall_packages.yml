@@ -1,0 +1,8 @@
+---
+
+- hosts: all
+  tasks:
+  - name: install nodejs package
+    apk: 
+      name: nodejs
+      state: absent
