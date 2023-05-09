@@ -5,7 +5,7 @@
   - name: install mysql
     package: 
       name: 
-        - mysql_server
+        - mysql-server
 
 - hosts: analysis_server
   tasks:
