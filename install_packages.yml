@@ -1,5 +1,12 @@
 ---
 
+-hosts: all
+  tasks:
+  -name: install neovim
+    package:
+      name: neovim
+
+
 - hosts: db_servers
   tasks:
   - name: install mysql
