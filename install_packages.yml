@@ -1,9 +1,16 @@
 ---
 
-- hosts: all
+- hosts: db_servers
   tasks:
-  - name: install nodejs package
+  - name: install mysql
     package: 
       name: 
-        - nodejs
-        - "{{ python_package }}"
+        - mysql_server
+
+- hosts: analysis_server
+  tasks:
+  - name: install python and node
+    package:
+      name:
+      - "{{ python_package }}"
+      - nodejs
