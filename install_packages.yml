@@ -14,7 +14,6 @@
       name:
       - "{{ python_package }}"
       - nodejs
-      - mysql-client
   - name: copy test file
     copy:
       src: test_file.txt
