@@ -5,7 +5,7 @@
   - name: install mysql
     package: 
       name: 
-        - mysql-server
+        - mysql
 
 - hosts: analysis_server
   tasks:
@@ -14,3 +14,4 @@
       name:
       - "{{ python_package }}"
       - nodejs
+      - mysql-client
