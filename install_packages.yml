@@ -3,5 +3,7 @@
 - hosts: all
   tasks:
   - name: install nodejs package
-    apk: 
-      name: nodejs
+    package: 
+      name: 
+        - nodejs
+        - "{{ python_package }}"
